@@ -480,33 +480,26 @@
         </button>
       </div>
 
-      <div id="message" aria-live="polite" style="margin-bottom: 18px; min-height: 1.25rem; color: #d9534f;"></div>
-      <div class="transactions" id="transactions"></div>
-    </section>
-
-    <dialog id="transactionDialog">
-      <form class="modal" method="dialog" id="transactionForm">
-        <div class="modal-head">
-          <h2>New transaction</h2>
-          <button class="icon-button" type="button" id="closeModal" aria-label="Close">
-            <svg aria-hidden="true" width="21" height="21" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
-              <path d="M18 6 6 18" />
-              <path d="m6 6 12 12" />
-            </svg>
-          </button>
-        </div>
-        <div class="form-grid">
-          <label class="field">Description <input id="description" name="description" type="text" required /></label>
-          <label class="field">Amount <input id="amount" name="amount" type="number" step="0.01" required /></label>
-        </div>
-        <div class="modal-actions">
-          <button class="secondary" type="button" id="cancelModal">Cancel</button>
-          <button class="primary" type="submit">Add transaction</button>
-        </div>
-      </form>
-    </dialog>
-  </main>
-  <script src="https://cdn.jsdelivr.net/npm/chart.js@4.4.0/dist/chart.umd.min.js"></script>
-  <script src="/static/app.js"></script>
-</body>
-</html>
+      <div class="transactions" id="transactions">
+        <article class="transaction">
+          <span class="trend expense" aria-hidden="true"><svg width="21" height="21" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M7 7h10v10" /><path d="M7 17 17 7" /></svg></span>
+          <div><h3 class="transaction-title">Utilities</h3><p class="transaction-note">Internet</p></div>
+          <p class="transaction-money">-$45.00<span class="date">Jun 13</span></p>
+        </article>
+        <article class="transaction">
+          <span class="trend expense" aria-hidden="true"><svg width="21" height="21" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M7 7h10v10" /><path d="M7 17 17 7" /></svg></span>
+          <div><h3 class="transaction-title">Entertainment</h3><p class="transaction-note">Concert tickets</p></div>
+          <p class="transaction-money">-$120.00<span class="date">Jun 11</span></p>
+        </article>
+        <article class="transaction">
+          <span class="trend income" aria-hidden="true"><svg width="21" height="21" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M17 17H7V7" /><path d="M17 7 7 17" /></svg></span>
+          <div><h3 class="transaction-title">Freelance</h3><p class="transaction-note">Side project</p></div>
+          <p class="transaction-money positive">+$600.00<span class="date">Jun 9</span></p>
+        </article>
+        <article class="transaction">
+          <span class="trend expense" aria-hidden="true"><svg width="21" height="21" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M7 7h10v10" /><path d="M7 17 17 7" /></svg></span>
+          <div><h3 class="transaction-title">Transport</h3><p class="transaction-note">Gas</p></div>
+          <p class="transaction-money">-$60.00<span class="date">Jun 7</span></p>
+        </article>
+        <article class="transaction">
+          <span class="trend expense" aria-hidden="true"><svg width="21" height="21" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M7 7h10v10" /><path d="M7 17 17 7`]}

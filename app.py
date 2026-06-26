@@ -3,8 +3,57 @@ from datetime import datetime
 
 app = Flask(__name__)
 
-transactions = []
-next_id = 1
+transactions = [
+    {
+        "id": 1,
+        "amount": 4200.00,
+        "description": "Salary - Monthly salary",
+        "timestamp": "2026-05-31T08:30:00"
+    },
+    {
+        "id": 2,
+        "amount": -1450.00,
+        "description": "Housing - Rent",
+        "timestamp": "2026-06-01T10:00:00"
+    },
+    {
+        "id": 3,
+        "amount": -320.00,
+        "description": "Groceries - Weekly shop",
+        "timestamp": "2026-06-04T14:00:00"
+    },
+    {
+        "id": 4,
+        "amount": -85.00,
+        "description": "Food & Dining - Dinner out",
+        "timestamp": "2026-06-06T19:00:00"
+    },
+    {
+        "id": 5,
+        "amount": -60.00,
+        "description": "Transport - Gas",
+        "timestamp": "2026-06-07T12:00:00"
+    },
+    {
+        "id": 6,
+        "amount": -120.00,
+        "description": "Entertainment - Concert tickets",
+        "timestamp": "2026-06-11T18:00:00"
+    },
+    {
+        "id": 7,
+        "amount": -45.00,
+        "description": "Utilities - Internet",
+        "timestamp": "2026-06-13T09:00:00"
+    },
+    {
+        "id": 8,
+        "amount": 600.00,
+        "description": "Freelance - Side project",
+        "timestamp": "2026-06-09T11:00:00"
+    }
+]
+next_id = 9
 
 @app.route("/")
 def home():
