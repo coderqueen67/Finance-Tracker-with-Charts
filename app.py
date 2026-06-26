@@ -97,7 +97,6 @@ def add_transaction():
     next_id += 1
 
     return jsonify(transaction), 201
-
 @app.route("/transactions/<int:transaction_id>", methods=["DELETE"])
 def delete_transaction(transaction_id):
     global transactions
@@ -107,6 +106,24 @@ def delete_transaction(transaction_id):
 
     transactions = [t for t in transactions if t["id"] != transaction_id]
     return jsonify({"message": "Deleted"}), 200
+  
+
+@app.route("/officepilot-saas/")
+def officepilot_saas():
+    return """
+    <!DOCTYPE html>
+    <html>
+    <head>
+        <title>Office Pilot SaaS</title>
+    </head>
+    <body style="font-family:Arial;background:#111;color:white;padding:40px;">
+        <h1>🚀 Office Pilot SaaS</h1>
+        <h2>AI Office Assistant</h2>
+        <p>Office Pilot is now connected to your Flask server.</p>
+    </body>
+    </html>
+    """
+
 
 if __name__ == "__main__":
     app.run(debug=True)
